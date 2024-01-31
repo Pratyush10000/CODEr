@@ -133,7 +133,7 @@
               <ul class="list-unstyled p-0 m-0">
                 <li class="side-a">
                   <a
-                    href="../main_web/IDE playground/index.html"
+                    href="../main_web/IDE playground/indexmain.html"
                     class="text-white text-decoration-none"
                     >IDE</a
                   >
