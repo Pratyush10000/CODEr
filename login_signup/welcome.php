@@ -76,7 +76,7 @@
         <button class="btn sideBarToggler text-white">
           <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" style="color: white" href="index.php"
+        <a class="navbar-brand" style="color: white" href="#"
           ><img
             style="height: 45px"
             src="../assets/icon-rounded-192x192.png"
