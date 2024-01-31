@@ -14,7 +14,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Code Playground</title>
+    <title>Home - Code Editor</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon-196.png" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -76,12 +76,12 @@
         <button class="btn sideBarToggler text-white">
           <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" style="color: white" href="#"
+        <a class="navbar-brand" style="color: white" href="index.php"
           ><img
             style="height: 45px"
             src="../assets/icon-rounded-192x192.png"
             alt="logo"
-          />Code Playground</a
+          />Code Editor</a
         >
         <button
           class="navbar-toggler"
@@ -164,7 +164,7 @@
           <div class="col-md-10 bg-light py-4">
             <div class="container">
               <h1>Get started</h1>
-              <p>See what you can accomplish on Code Playground</p>
+              <p>See what you can accomplish on Code Editor</p>
               <div class="row">
                 <div class="col-md-6">
                   <div class="card mb-3" style="max-width: 540px">

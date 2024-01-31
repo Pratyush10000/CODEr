@@ -53,6 +53,12 @@
 										include("compilers/typescript.php");
 										break;
 									}
+									case "php":
+										{
+											include("compilers/php.php");
+											break;
+										}
+
 			}
 	}
 ?>
