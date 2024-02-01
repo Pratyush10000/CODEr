@@ -11,7 +11,7 @@ $requestData = [
     'clientSecret' => $clientSecret,
     'script' => $code,
     'stdin' => $input,
-    'language' => 'java', 
+    'language' => 'java',
 ];
 
 // Initialize cURL session
@@ -35,11 +35,11 @@ if (curl_errno($ch)) {
 
     // Check for compilation or runtime errors
     if (isset($result['error'])) {
-        echo "<pre>Error: " . $result['error']['message'] . "</pre>";
+        echo "Error: " . $result['error']['message'];
     } else {
         // Strip HTML tags from the output and then display
         $output = strip_tags($result['output']);
-        echo "<pre>$output</pre>";
+        echo "$output";
     }
 }
 

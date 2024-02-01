@@ -5,13 +5,14 @@ h3 {
   padding: 10px;
   margin-bottom: 15px;
 }
+
 body,
 html {
   overflow: hidden !important;
 }
 
 body {
-  background-image: linear-gradient(45deg, rgb(74, 225, 255), #1a009c);
+  background-image: linear-gradient(90deg, hsla(222, 45%, 10%, 1) 0%, hsla(222, 45%, 10%, 1) 50%, hsla(222, 45%, 10%, 1) 100%);
 }
 
 .row.cspace {
@@ -23,6 +24,7 @@ label.mt-4 {
   display: block;
   margin-top: 20px;
 }
+
 .toolBar {
   max-width: 85%;
   width: 85%;
@@ -33,8 +35,8 @@ label.mt-4 {
 
 textarea {
   font-family: "consolas";
-  background-color: blue !important;
-  color: rgb(74, 225, 255) !important;
+  background-color: #ffff !important;
+  color: black !important;
 }
 
 label {
@@ -46,6 +48,7 @@ input#st {
   top: -45px;
   right: 15px;
 }
+
 .top {
   position: relative;
   top: -42px;
@@ -55,14 +58,17 @@ input#st {
   align-items: center;
   margin-bottom: -50px;
 }
+
 .top label {
   width: 170px;
 }
+
 .col-sm-4 {
   padding-top: 24px;
 }
 
 @media screen and (max-width: 767px) {
+
   body,
   html {
     overflow-y: scroll !important;
