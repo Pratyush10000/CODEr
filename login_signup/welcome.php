@@ -14,7 +14,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Code Editor</title>
+    <title>Home - Code Playground</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon-196.png" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -81,8 +81,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <button class="btn sideBarToggler text-white">
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" style="color: white" href="../index.html"><img style="height: 45px"
-                    src="../assets/icon-rounded-192x192.png" alt="logo" />Code Editor</a>
+            <a class="navbar-brand" style="color: white" href="#"><img style="height: 45px"
+                    src="../assets/icon-rounded-192x192.png" alt="logo" />Code Playground</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -112,12 +112,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                     <div class="p-4">
                         <ul class="list-unstyled p-0 m-0">
                             <li class="side-a">
-                                <a href="../main_web/IDE playground/indexmain.html"
+                                <a href="../main_web/IDE playground/index.html"
                                     class="text-white text-decoration-none">IDE</a>
                             </li>
                             <li class="side-a">
                                 <a href="../main_web/web playground/index.html"
-                                    class="text-white text-decoration-none">Web Playground</a>
+                                    class="text-white text-decoration-none">Web
+                                    Playground</a>
                             </li>
                             <li class="side-a">
                                 <a href="../main_web/Sorting-Visualization/index.html"
@@ -133,7 +134,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                 <div class="col-md-10 bg-light py-4">
                     <div class="container">
                         <h1>Get started</h1>
-                        <p>See what you can accomplish on Code Editor</p>
+                        <p>See what you can accomplish on Code Playground</p>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card mb-3" style="max-width: 540px">
