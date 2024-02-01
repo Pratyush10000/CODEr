@@ -1,3 +1,4 @@
+<?php include 'contact.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Editor | An Online IDE</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon-196.png" />
+    <link rel="icon" type="image/x-icon" href="favicon-196.png"/>
 
     <!-- Linking External CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -16,8 +17,133 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <style>
+      .contact {
+        background: linear-gradient(180deg, #192334 0%, #4e66d7 100%);
+        color: white;
+        padding: 50px 0;
+      }
+      
+      .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .contact-content {
+        flex: 1;
+        text-align: left;
+        padding-right: 50px;
+      }
+      
+      .contact-form {
+        max-width: 400px;
+      }
+      
+      .contact h1, .contact p {
+        color: white;
+      }
+      
+      .contact-form label {
+        color: white;
+      }
+      
+      .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #4e66d7;
+        border-radius: 5px;
+        background-color: #0e1525;
+        color: white;
+      }
+      
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: #0079f27a;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      
+      .contact-form button:hover {
+        border-color: white;
+      }
+      
+    </style>
+    
 </head>
 <body>
+  <nav
+      class="navbar fixed-top navbar-expand-lg"
+      style="background-color: #0e1525"
+    >
+      <div class="container container-fluid">
+        <a
+          class="navbar-brand"
+          style="color: white; font-family: sans-serif"
+          href="index_main.html"
+        >
+          <img
+            style="height: 45px"
+            src="../assets/icon-rounded-192x192.png"
+            alt="logo"
+          />
+          Code Editor</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav align-items-center">
+            <a
+              class="nav-link nav-hover active"
+              style="color: white"
+              href="../main_web/IDE playground/index.html"
+              >IDE</a
+            >
+            <a
+              class="nav-link nav-hover active"
+              style="color: white"
+              href="../main_web/web playground/index.html"
+              >Web Playground</a
+            >
+            <a
+              class="nav-link nav-hover active"
+              style="color: white"
+              href="../main_web/quiz/index.html"
+              >Quiz</a
+            >
+            <a
+              class="nav-link nav-hover active"
+              style="color: white"
+              href="../main_web/Sorting-Visualization/index.html"
+              >Sorting Visualizer</a
+            >
+            <a
+              class="nav-link nav-hover active"
+              style="color: white"
+              href="../login_signup/welcome.php"
+              >Home</a
+            >
+
+            
+          </div>
+        </div>
+      </div>
+    </nav>
   <!-- Feature Area -->
   <div class="feature">
     <h1 class="feature-header">Features for all skill levels</h1>
@@ -219,7 +345,7 @@
             improving their lives with us"
           </h4>
         </div>
-        <div class="col-md-2">
+        <!-- <div class="col-md-2">
           <ul>
             <li><h3>Features</h3></li>
             <a href=""><li>Instant IDE</li></a>
@@ -244,10 +370,36 @@
             <a href=""><li>Privacy Policy</li></a>
             <a href=""><li>Sitemap</li></a>
           </ul>
-        </div>
+        </div> -->
+        <section class="contact">
+          <div class="container contact-container">
+            <div class="contact-content">
+              <h1>Contact Us</h1>
+              <p>If you have any questions or feedback, feel free to reach out to us!</p>
+            </div>
+            <form action="https://formspree.io/f/mwkglerv?no_redirect" method="POST" class="contact-form">
+              <div class="mb-3">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="contact-name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="contact-email" name="_replyto" required>
+              </div>
+              <div class="mb-3">
+                <label for="contact-message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="contact-message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-signup">Send Message</button>
+            </form>
+          </div>
+        </section>
+        
+        
       </div>
     </div>
   </div>
+  
 
   <footer>
     Copyright © 2022 | Code Playground | MSB Software Solution Ltd.

@@ -78,9 +78,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <!-- Navigation Bar -->
     <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #0e1525">
         <div class="container container-fluid">
-            <button class="btn sideBarToggler text-white">
+            <!-- <button class="btn sideBarToggler text-white">
                 <i class="fa fa-bars"></i>
-            </button>
+            </button> -->
             <a class="navbar-brand" style="color: white" href="../index.html"><img style="height: 45px"
                     src="../assets/icon-rounded-192x192.png" alt="logo" />Code Editor</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -89,17 +89,25 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white" href="about_us.html">About Us</a>
+                </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" style="color: white" href="#" id="navbarDropdownMenuLink"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <?php echo "Welcome, " . $_SESSION['username'] ?>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Account</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Account</a></li> -->
                             <li><a class="dropdown-item" href="logout.php">Log Out</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link" style="color: white" href="about_us.html">Contact Us</a>
+                </li>
+                    
                 </ul>
             </div>
         </div>
@@ -108,7 +116,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <section class="sidebarHolder position-relative">
         <div class="container-fluid px-0">
             <div class="row bg-light">
-                <div class="col-md-2 sidebar bg-dark">
+                <!-- <div class="col-md-2 sidebar bg-dark">
                     <div class="p-4">
                         <ul class="list-unstyled p-0 m-0">
                             <li class="side-a">
@@ -128,7 +136,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="col-md-10 bg-light py-4">
                     <div class="container">

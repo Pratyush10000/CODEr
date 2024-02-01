@@ -91,3 +91,9 @@ button.btn.btn-close {
 ::placeholder{
     color: white;
 }
+
+.main a {
+    text-decoration: none; /* Remove underline from the anchor tag */
+    color: inherit; /* Inherit the color from the parent */
+  }
+
